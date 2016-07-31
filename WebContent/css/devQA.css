@@ -275,6 +275,11 @@ code
 	transition: all .15s;
 	/*background-color: #404040;*/
 }
+.active
+{
+	background-color: #d1e0e0; 
+	color: #2b2d2d !important;
+}
 .aaq
 {
 	font-size: 1em;
