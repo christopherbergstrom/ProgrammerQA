@@ -38,7 +38,7 @@ window.onload = function()
       questionValue = checkForTagsAndLines(questionValue);
       if (pass)
       {
-        console.log(topicValue+" "+questionValue);
+        // console.log(topicValue+" "+questionValue);
         var questionObj = {topic:topicValue, question:questionValue};
         post("POST", "rest/postQuestion/", questionObj);
       }
@@ -47,8 +47,8 @@ window.onload = function()
 };
 function validateQuestion(topicValue, questionValue)
 {
-  console.log("in validateQuestion");
-  console.log(topicValue+" "+questionValue);
+  // console.log("in validateQuestion");
+  // console.log(topicValue+" "+questionValue);
   questionValue =  questionValue.trim();
   topicDiv.innerHTML="";
   questionBoxDiv.innerHTML="";
@@ -81,8 +81,8 @@ function validateQuestion(topicValue, questionValue)
 }
 function validateAnswer(answerValue)
 {
-  console.log("in validateAnswer");
-  console.log(answerValue);
+  // console.log("in validateAnswer");
+  // console.log(answerValue);
   answerValue = answerValue.trim();
   answerBoxDiv.innerHTML="";
   answerBoxLengthDiv.innerHTML="";
@@ -124,7 +124,7 @@ function getQuestions(loadContent)
 }
 function getAnswers(question_number, loadAnswers)
 {
-  console.log("in get answers");
+  // console.log("in get answers");
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "rest/getAnswers/"+question_number);
   xhr.onreadystatechange = function()
@@ -133,7 +133,7 @@ function getAnswers(question_number, loadAnswers)
     {
       var answersArray = JSON.parse(xhr.responseText);
       // return answersArray;
-      console.log(answersArray);
+      // console.log(answersArray);
       loadAnswers(answersArray, question_number);
     }
   };
@@ -142,18 +142,18 @@ function getAnswers(question_number, loadAnswers)
 
 function loadAnswers(answersArray, question_number)
 {
-  console.log("in loadAnswers "+question_number);
+  // console.log("in loadAnswers "+question_number);
   if (answersArray.length > 0)
   {
-    console.log("answersArray > 0");
+    // console.log("answersArray > 0");
     for (var j=0; j<answersArray.length; j++)
     {
-      console.log(answersArray[j].question_number);
-      console.log(answersArray[j].answer);
-      console.log(question_number);
+      // console.log(answersArray[j].question_number);
+      // console.log(answersArray[j].answer);
+      // console.log(question_number);
       // if (answersArray.id === question_number)
       // {
-        console.log("passed");
+        // console.log("passed");
         var answerLabel = document.createElement("div");
         answerLabel.innerHTML="Answer";
         answerLabel.setAttribute("class", "answerLabel");
@@ -174,7 +174,7 @@ function loadContent(questionsArray)
   var radioButtonsArray = [];
   for (var i=0; i<questionsArray.length; i++)
   {
-    // console.log(questionsArray[i].id);
+    // // console.log(questionsArray[i].id);
     var qaContainer = document.createElement("div")
     var qaContainerId = "qaContainer"+questionsArray[i].id;
     qaContainer.setAttribute("id", qaContainerId);
@@ -195,18 +195,18 @@ function loadContent(questionsArray)
     qaContainer.appendChild(questionLabel);
     qaContainer.appendChild(question);
     container.appendChild(qaContainer);
-    console.log("before getAnswers");
+    // console.log("before getAnswers");
     getAnswers(questionsArray[i].id, loadAnswers);
-    console.log("after getAnswers");
+    // console.log("after getAnswers");
     // var answersArray = getAnswers(questionsArray[i].id);
-    // console.log(answersArray);
+    // // console.log(answersArray);
     // if (answersArray)
     // {
     //   for (var j=0; j<answersArray.length; j++)
     //   {
     //     if (answersArray.id === questionsArray.id)
     //     {
-    //       console.log("passed");
+    //       // console.log("passed");
     //       var answerLabel = document.createElement("div");
     //       answerLabel.innerHTML="Answer";
     //       answerLabel.setAttribute("class", "answerLabel");
@@ -240,16 +240,16 @@ function loadContent(questionsArray)
       {
         var id = radioButtonsArray[k].value;
         var answerBox = document.getElementById("answerBox");
-        // console.log("in click");
-        // console.log(answerBox);
-        // console.log(answerBox.value);
+        // // console.log("in click");
+        // // console.log(answerBox);
+        // // console.log(answerBox.value);
         var answerValue = answerBox.value;
         var pass = validateAnswer(answerValue);
         answerValue = checkForTagsAndLines(answerValue);
         if (pass)
         {
-          console.log("passed");
-          console.log(answerValue);
+          // console.log("passed");
+          // console.log(answerValue);
           var answerObj = {question_number:id, answer:answerValue};
           post("POST", "rest/postAnswer/", answerObj);
         }
@@ -268,10 +268,10 @@ function post(method, url, object, callback)
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange=function ()
   {
-    // console.log(xhr.status);
-    // console.log(xhr.readyState);
-    // console.log(xhr.responseText);
-    // console.log(xhr.getAllResponseHeaders());
+    // // console.log(xhr.status);
+    // // console.log(xhr.readyState);
+    // // console.log(xhr.responseText);
+    // // console.log(xhr.getAllResponseHeaders());
   }
   if (object)
   {

@@ -1,14 +1,18 @@
 body
 {
   font-family: monospace;
-  background-color: #d1e0e0;
-  color: #2b2d2d;
+  /*background-color: white;*/
+  background: url(../images/back.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  color: black;
   font-size: 1.2em;
 }
 h1
 {
   margin-top: 2em;
   text-align: center;
+  font-weight: bold;
+  font-size: 3em;
 }
 .error
 {
@@ -72,7 +76,7 @@ h1
 }
 .questionLabel
 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
   text-decoration: underline;
   margin-top: 4em;
@@ -84,7 +88,7 @@ h1
 }
 .answerLabel
 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
   text-decoration: underline;
   margin-top: 1.5em;
@@ -92,6 +96,7 @@ h1
 .answer
 {
   font-size: 1.2em;
+  /*padding-left: 5%;*/
 }
 .askSelectButton
 {
@@ -99,13 +104,13 @@ h1
   -webkit-appearance:none;
   width:20px;
   height:20px;
-  border:3px solid #2b2d2d;
+  border:3px solid black;
   border-radius: 8px;
   outline:none;
 }
 .askSelectButton:hover
 {
-	background-color: #2b2d2d;
+	background-color: #ff0000;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
@@ -113,14 +118,14 @@ h1
 }
 .askSelectButton:checked
 {
-	background-color: #2b2d2d;
+	background-color: #ff9900;
 }
 #answerBox
 {
   /*margin-top: 4em;*/
   width: 100%;
   font-size: 1.5em;
-  color: #2b2d2d;
+  color: black;
   /*right: 10%;*/
   /*float: right;*/
   outline:none;
@@ -129,24 +134,26 @@ h1
 {
 	margin-top: .5em;
 	border-radius: 8px;
-	border: 3px solid #2b2d2d;
-	color: #2b2d2d;
+	border: 3px solid black;
+	color: black;
 	font-size: 1.5em;
 	padding: 10px;
 
-	background-color: #d1e0e0;
+	/*background-color: white;*/
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
-	outline:none;
+	outline: none;
+  -webkit-appearance:none;
+  background-color: Transparent;
 /* 	-webkit-transition-timing-function: all .25s ease;
 	transition-timing-function: all .25s ease;  */
 }
 #answerBtn:hover
 {
-	background-color: #2b2d2d;
-	color: #d1e0e0;
+	background-color: black;
+	color: #ff0000;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
@@ -164,33 +171,35 @@ h1
 {
 	/*margin-top: 4em;*/
 	border-radius: 8px;
-	border: 3px solid #2b2d2d;
+	border: 3px solid black;
 	font-size: 1.5em;
 	padding: 10px;
-	color: #2b2d2d;
+	color: black;
 
-	background-color: #d1e0e0;
+	background-color: white;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
 	outline:none;
+  background-color: Transparent;
 }
 #topic:hover
 {
-	background-color: #2b2d2d;
-	color: #d1e0e0;
+	background-color: black;
+	color: #ff0000;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
+  cursor: pointer;
 }
 #questionBox
 {
   margin-top: .5em;
   width: 100%;
   font-size: 1.5em;
-  color: #2b2d2d;
+  color: black;
   /*right: 10%;*/
   /*float: right;*/
   outline:none;
@@ -200,22 +209,23 @@ h1
 {
 	margin-top: .5em;
 	border-radius: 8px;
-	border: 3px solid #2b2d2d;
+	border: 3px solid black;
 	font-size: 1.5em;
 	padding: 10px;
 
-	background-color: #d1e0e0;
-	color: #2b2d2d;
+	/*background-color: white;*/
+	color: black;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
 	outline:none;
+  background-color: Transparent;
 }
 #ask:hover
 {
-	background-color: #2b2d2d;
-	color: #d1e0e0;
+	background-color: black;
+	color: #ff0000;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
@@ -234,7 +244,7 @@ code
 {
 	position: relative;
 	top: 0;
-    left: 0;
+  left: 0;
 	z-index: 1000;
 }
 .ul
@@ -243,7 +253,7 @@ code
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #2b2d2d;
+	background-color: black;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -256,7 +266,7 @@ code
 .li .a
 {
 	display: inline-block;
-	color: white;
+	color: #ff9900;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -267,8 +277,8 @@ code
 }
 .li .a:hover
 {
-	color: #2b2d2d;
-	background-color: #d1e0e0;
+	color: #ff0000 !important;
+	background-color: #4d4d4d;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
@@ -277,8 +287,8 @@ code
 }
 .active
 {
-	background-color: #d1e0e0; 
-	color: #2b2d2d !important;
+	background-color: white;
+	color: #3399ff !important;
 }
 .aaq
 {
@@ -288,7 +298,7 @@ code
 .aaq .a
 {
 	display: inline-block;
-	color: white;
+	color: #ff9900;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -299,47 +309,11 @@ code
 }
 .aaq .a:hover
 {
-  color: #2b2d2d;
-	background-color: #d1e0e0;
+  color: #ff0000;
+	background-color: #4d4d4d;
 	-webkit-transition: all .15s;
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
 	/*background-color: #404040;*/
 }
-/* input[type='radio'] {
-  -webkit-appearance:none;
-  width:20px;
-  height:20px;
-  border:3px solid #2b2d2d;
-  border-radius: 8px;
-  outline:none;
-  -webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
-}
-
-input[type='radio']:hover {
-	border: 3px solid white;
-	background-color: #2b2d2d;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
-}
-
-input[type='radio']:before {
-  content:'';
-  display:block;
-  width:60%;
-  height:60%;
-  margin: 20% auto;
-  border-radius:50%;
-}
-input[type='radio']:checked {
-  background: #ff00ff;
-  background-color: #2b2d2d;
-  background-color: #2b2d2d;
-  background: #d1e0e0;
-} */
