@@ -178,6 +178,7 @@ function loadContent(questionsArray)
     var qaContainer = document.createElement("div")
     var qaContainerId = "qaContainer"+questionsArray[i].id;
     qaContainer.setAttribute("id", qaContainerId);
+    qaContainer.setAttribute("class", "qaContainer");
     var questionLabel = document.createElement("div");
     questionLabel.innerHTML="Question";
     questionLabel.setAttribute("class", "questionLabel");
