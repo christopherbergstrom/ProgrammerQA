@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import data.Answers;
+import data.Comments;
 import data.QADAO;
 import data.Questions;
 
@@ -68,5 +69,15 @@ public class QAController
 		System.out.println("in postAnswers");
 		System.out.println(answer);
 		return qadao.postAnswer(answer);
+	}
+	
+	// post new comment
+	@ResponseBody
+	@RequestMapping(path = "postComment", method = RequestMethod.POST)
+	public Boolean postComment(@RequestBody Comments comment)
+	{
+		System.out.println("in postComments");
+		System.out.println(comment);
+		return qadao.postComment(comment);
 	}
 }

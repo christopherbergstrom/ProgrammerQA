@@ -1,4 +1,5 @@
 var ask;
+var send;
 var body;
 var container;
 var answerContainer;
@@ -22,6 +23,7 @@ window.onload = function()
   answerContainer = document.getElementById("answerContainer");
   type = document.getElementById("type");
   ask = document.getElementById("ask");
+  send = document.getElementById("send");
   if (type)
   {
     getQuestions(loadContent);
@@ -43,6 +45,22 @@ window.onload = function()
         post("POST", "rest/postQuestion/", questionObj);
       }
     });
+  }
+  if (send)
+  {
+	  send.addEventListener("click", function()
+	  {
+		  var comment = document.getElementById("questionBox");
+		  var commentValue = comment.value;
+		  var pass = validateComment(commentValue);
+		  commentValue = checkForTagsAndLines(commentValue);
+		  if (pass)
+		  {
+			  // console.log(topicValue+" "+questionValue);
+			  var commentObj = {comment:commentValue};
+			  post("POST", "rest/postComment/", commentObj);
+		  }
+      });
   }
 };
 function validateQuestion(topicValue, questionValue)
@@ -100,6 +118,28 @@ function validateAnswer(answerValue)
   {
     return true;
   }
+}
+function validateComment(commentValue)
+{
+	// console.log("in validateAnswer");
+	// console.log(answerValue);
+	commentValue = commentValue.trim();
+	questionBoxDiv.innerHTML="";
+	questionBoxLengthDiv.innerHTML="";
+	if (commentValue === "")
+	{
+		questionBoxDiv.innerHTML="Please enter a comment";
+		return false;
+	}
+	else if (commentValue.length < 11)
+	{
+		questionBoxLengthDiv.innerHTML="Comment must be longer than 10 characters";
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }
 function checkForTagsAndLines(value)
 {

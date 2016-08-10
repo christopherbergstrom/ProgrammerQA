@@ -66,6 +66,13 @@ h1
   margin-left: 10%;
   margin-bottom: 2em;
 }
+#wrapper
+{
+	position: relative;
+  min-height: 100%;
+  
+	
+}
 .qaContainer
 {
   padding-bottom: 1%;
@@ -151,8 +158,8 @@ h1
 	-ms-transition: all .15s;
 	transition: all .15s;
 	outline: none;
-  -webkit-appearance:none;
-  background-color: Transparent;
+    -webkit-appearance:none;
+    background-color: Transparent;
 /* 	-webkit-transition-timing-function: all .25s ease;
 	transition-timing-function: all .25s ease;  */
 }
@@ -173,6 +180,7 @@ h1
 	margin-left: 10%;
 	text-align:center;
     margin-bottom: 2em;
+    padding-bottom: 100%;
 }
 #topic
 {
@@ -238,6 +246,32 @@ h1
 	-ms-transition: all .15s;
 	transition: all .15s;
 }
+#send
+{
+	margin-top: .5em;
+	border-radius: 8px;
+	border: 3px solid black;
+	font-size: 1.5em;
+	padding: 10px;
+
+	/*background-color: white;*/
+	color: black;
+	-webkit-transition: all .15s;
+	-moz-transition: all .15s;
+	-ms-transition: all .15s;
+	transition: all .15s;
+	outline:none;
+    background-color: Transparent;
+}
+#send:hover
+{
+	background-color: black;
+	color: #ff0000;
+	-webkit-transition: all .15s;
+	-moz-transition: all .15s;
+	-ms-transition: all .15s;
+	transition: all .15s;
+}
 code
 {
   font-weight: normal;
@@ -251,7 +285,14 @@ code
 {
 	position: relative;
 	top: 0;
-  left: 0;
+    left: 0;
+	z-index: 1000;
+}
+#bottomMenu
+{
+	position: relative;
+	top: 0;
+    left: 0;
 	z-index: 1000;
 }
 .ul

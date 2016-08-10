@@ -6,15 +6,14 @@
     <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>&lt;SQL Q&A/&gt;</title>
+    <title>&lt;Contact Us/&gt;</title>
   </head>
   <body>
-    <input type = "hidden" id = "type" value = "SQL"/>
     <ul id="menu" class="ul">
       <li class="li"><a class="a" href="index.html">Home</a></li>
       <li class="li"><a class="a" href="java.html">Java</a></li>
       <li class="li"><a class="a" href="javascript.html">JavaScript</a></li>
-      <li class="li"><a class="a active" href="sql.html">SQL</a></li>
+      <li class="li"><a class="a" href="sql.html">SQL</a></li>
       <li class="li"><a class="a" href="csharp.html">C#</a></li>
       <li class="li"><a class="a" href="python.html">Python</a></li>
       <li class="li"><a class="a" href="cplusplus.html">C++</a></li>
@@ -25,19 +24,20 @@
       <li class="li"><a class="a" href="git.html">Git</a></li>
       <li class="aaq"><a class="a" href="question.html">Ask a Question</a></li>
     </ul>
-    <h1>&lt;SQL Q&A/&gt;</h1>
+    <h1>&lt;Contact Us/&gt;</h1>
     <div class="leftAd"></div>
     <div class="rightAd"></div>
-    <div id="container">
+    <div id="wrapper">
+	    <div id="questionContainer">
+	      <div id="questionBoxDiv" class="error"></div>
+	      <div id="questionBoxLengthDiv" class="error"></div>
+	      <textarea id="questionBox" rows="6" placeholder="Type your comment here"></textarea>
+	      <button id="send">Send</button>
+	    </div>
     </div>
-    <div id="answerContainer">
-      <div id="answerSelectDiv" class="error"></div>
-      <div id="answerBoxDiv" class="error"></div>
-      <div id="answerBoxLengthDiv" class="error"></div>
-    </div>
-    <ul id="bottomMenu" class="ul">
-      <li class="li"><a class="a" href="contact.html">Contact Us</a></li>
-    </ul>
+	    <ul id="bottomMenu" class="ul">
+	      <li class="li"><a class="a active" href="contact.html">Contact Us</a></li>
+	    </ul>
     <script src="js/devQA.js"></script>
   </body>
 </html>

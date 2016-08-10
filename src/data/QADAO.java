@@ -45,4 +45,16 @@ public class QADAO
 			return true;
 		}
 	}
+	public Boolean postComment(Comments comment)
+	{
+		em.persist(comment);
+		if (!em.contains(comment))
+		{
+			return false;
+		} 
+		else
+		{
+			return true;
+		}
+	}
 }
