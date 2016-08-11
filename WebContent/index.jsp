@@ -47,7 +47,7 @@
 
       <div class="questionLabel">How do I ask a question?</div>
       <div class="answer qaContainer">
-        <p>Click on the "Ask a Question" button, fill out the form, and click the "Ask" button. Your question will be answered soon
+        <p>Click the "More" button, then the "Ask a Question" button, fill out the form, and click the "Ask" button. Your question will be answered soon
         by other users of the website.</p>
       </div>
 
@@ -55,6 +55,11 @@
       <div class="answer qaContainer">
         <p>Click the bubble next to the question you want to answer, fill out the form, and click the "Answer" button. Your answer
         will appear immediately.</p>
+      </div>
+      
+      <div class="questionLabel">How do I make a comment/suggestion?</div>
+      <div class="answer qaContainer">
+        <p>Click the "More" button, then the "Contact Us" button, fill out the form, and click the "Send" button. Your comment/suggestion will be reviewed and considered.</p>
       </div>
     </div>
     <script src="js/devQA.js"></script>
