@@ -36,9 +36,6 @@
         will appear immediately.</p>
       </div>
     </div>
-    <ul id="bottomMenu" class="ul">
-      <li class="li"><a class="a" href="contact.html">Contact Us</a></li>
-    </ul>
     <script src="js/devQA.js"></script>
   </body>
 </html>
