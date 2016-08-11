@@ -12,6 +12,10 @@ var answerSelectDiv;
 var answerBoxLengthDiv;
 window.onload = function()
 {
+$("#dropdown").click(function()
+  {
+	$("#list").toggleClass("show");
+  });
   body = document.querySelector("body");
   topicDiv = document.getElementById("topicDiv");
   questionBoxDiv = document.getElementById("questionBoxDiv");

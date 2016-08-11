@@ -1,29 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="css/devQA.css"/>
-    <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<jsp:include page="_head.jsp"></jsp:include>
     <title>&lt;Programmer Q&A/&gt;</title>
   </head>
   <body>
-    <ul id="menu" class="ul">
-      <li class="li"><a class="a active" href="index.jsp">Home</a></li>
-      <li class="li"><a class="a" href="java.html">Java</a></li>
-      <li class="li"><a class="a" href="javascript.html">JavaScript</a></li>
-      <li class="li"><a class="a" href="sql.html">SQL</a></li>
-      <li class="li"><a class="a" href="csharp.html">C#</a></li>
-      <li class="li"><a class="a" href="python.html">Python</a></li>
-      <li class="li"><a class="a" href="cplusplus.html">C++</a></li>
-      <li class="li"><a class="a" href="php.html">PHP</a></li>
-      <li class="li"><a class="a" href="ios.html">iOS</a></li>
-      <li class="li"><a class="a" href="rubyrails.html">Ruby/Rails</a></li>
-      <li class="li"><a class="a" href="htmlcss.html">HTML/CSS</a></li>
-      <li class="li"><a class="a" href="git.html">Git</a></li>
-      <li class="aaq"><a class="a" href="question.html">Ask a Question</a></li>
-    </ul>
+	<jsp:include page="_menu.jsp"></jsp:include>
     <h1>&lt;Programmer Q&A/&gt;</h1>
     <div class="leftAd"></div>
     <div class="rightAd"></div>
