@@ -23,7 +23,7 @@
 			 --><a class="a" href="rubyrails.jsp">Ruby/Rails</a><!-- 
 			 --><a class="a" href="htmlcss.jsp">HTML/CSS</a><!-- 
 			 --><a class="a" href="git.jsp">Git</a><!-- 
-			 --><a class="a" id="more" href="#">More</a>
+			 --><a class="a" id="more" href="#">More <span class="fa fa-angle-down"></span></a>
 		</div>
 		<div id="list" class="items">
 			<a class="moreA" href="question.jsp">Ask a Question</a>

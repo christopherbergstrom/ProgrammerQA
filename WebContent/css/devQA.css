@@ -287,8 +287,8 @@ code
 }
 .menu
 {
-	display: block;
 	position: relative;
+	display: block;
 	top: 0;
     left: 0;
 	z-index: 1000;
@@ -318,9 +318,12 @@ code
 	-ms-transition: all .15s;
 	transition: all .15s;
 }
+.a span
+{
+	font-size: .8em;
+}
 .moreA
 {
-	font-size: 1em;
   display: block;
   text-align: right;
   overflow: hidden;
