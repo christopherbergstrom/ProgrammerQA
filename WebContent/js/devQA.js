@@ -12,10 +12,18 @@ var answerSelectDiv;
 var answerBoxLengthDiv;
 window.onload = function()
 {
-$("#dropdown").click(function()
-  {
-	$("#list").toggleClass("show");
-  });
+    $("#more").click(function()
+    	      {
+    	        // $("#list").css("display", "block");
+    	        $("#list").toggleClass("show");
+    	      });
+    	      $(document).click(function(e)
+    	      {
+    	        if(!e.target.matches('#more'))
+    	        {
+    	          $("#list").removeClass("show");
+    	        }
+    	      });
   body = document.querySelector("body");
   topicDiv = document.getElementById("topicDiv");
   questionBoxDiv = document.getElementById("questionBoxDiv");

@@ -284,39 +284,18 @@ code
   background-color: #b3cbcb;
   color: white;
 }
-#menu
+.menu
 {
 	position: relative;
 	top: 0;
     left: 0;
 	z-index: 1000;
-}
-#bottomMenu
-{
-	position: relative;
-	top: 0;
-    left: 0;
-	z-index: 1000;
-}
-.ul
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
 	background-color: black;
-	position: fixed;
-	top: 0px;
-	width: 100%;
 }
-.li
+.menu a
 {
-	font-size: 1em;
-	float: left;
-}
-.li .a
-{
-	display: inline-block;
+	background-color: black;
+  	display: inline-block;
 	color: #ff9900;
 	text-align: center;
 	padding: 14px 16px;
@@ -326,7 +305,43 @@ code
 	-ms-transition: all .15s;
 	transition: all .15s;
 }
-.li .a:hover
+.menu a:hover
+{
+	color: #ff0000;
+	background-color: #4d4d4d;
+	-webkit-transition: all .15s;
+	-moz-transition: all .15s;
+	-ms-transition: all .15s;
+	transition: all .15s;
+}
+.items
+{
+    display: none;
+    /*float: right;*/
+	right: 0;
+	overflow: hidden;
+}
+#list
+{
+  right: 0;
+  float: right;
+}
+#list a
+{
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  
+	color: #ff9900;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	-webkit-transition: all .15s;
+	-moz-transition: all .15s;
+	-ms-transition: all .15s;
+	transition: all .15s;
+}
+#list a:hover
 {
 	color: #ff0000 !important;
 	background-color: #4d4d4d;
@@ -334,37 +349,17 @@ code
 	-moz-transition: all .15s;
 	-ms-transition: all .15s;
 	transition: all .15s;
-	/*background-color: #404040;*/
+}
+.show
+{
+  display: block;
+}
+#more
+{
+  float: right;
 }
 .active
 {
-	background-color: white;
+	background-color: white !important;
 	color: #3399ff !important;
-}
-.aaq
-{
-	font-size: 1em;
-	float: right;
-}
-.aaq .a
-{
-	display: inline-block;
-	color: #ff9900;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
-}
-.aaq .a:hover
-{
-  color: #ff0000;
-	background-color: #4d4d4d;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
-	/*background-color: #404040;*/
 }
