@@ -1,17 +1,27 @@
 body
 {
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: 'Lato' sans-serif;
+  /* font-family: Verdana, Geneva, sans-serif; */
   background-color: white;
   color: black;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 h1
 {
+	position: absolute;
+	width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+	
   display: relative;
-  margin-top: 2em;
   text-align: center;
-  font-weight: bold;
-  font-size: 3em;
+  /* font-weight: bold; */
+  font-size: 2.5em;
+  background-color: #fdd785;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .error
 {
@@ -63,8 +73,10 @@ h1
 }
 #container
 {
+	position: relative;
   width: 80%;
   margin-left: 10%;
+  margin-top: 15%;
   margin-bottom: 2em;
 }
 #wrapper
@@ -128,10 +140,10 @@ h1
 .askSelectButton:hover
 {
 	background-color: #ff0000;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 	cursor: pointer;
 }
 .askSelectButton:checked
@@ -158,10 +170,10 @@ h1
 	padding: 10px;
 
 	/*background-color: white;*/
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 	outline: none;
     -webkit-appearance:none;
     background-color: Transparent;
@@ -172,10 +184,10 @@ h1
 {
 	background-color: black;
 	color: #ff0000;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 /* 	-webkit-transition-timing-function: all .25s ease;
 	transition-timing-function: all .25s ease;  */
 }
@@ -185,6 +197,7 @@ h1
 	margin-left: 10%;
 	text-align:center;
     margin-bottom: 2em;
+    margin-top: 15%;
 }
 #topic
 {
@@ -196,10 +209,10 @@ h1
 	color: black;
 
 	background-color: white;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 	outline:none;
   background-color: Transparent;
 }
@@ -207,10 +220,10 @@ h1
 {
 	background-color: black;
 	color: #ff0000;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
   cursor: pointer;
 }
 #questionBox
@@ -234,10 +247,10 @@ h1
 
 	/*background-color: white;*/
 	color: black;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 	outline:none;
   background-color: Transparent;
 }
@@ -245,10 +258,10 @@ h1
 {
 	background-color: black;
 	color: #ff0000;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 #send
 {
@@ -260,10 +273,10 @@ h1
 
 	/*background-color: white;*/
 	color: black;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 	outline:none;
     background-color: Transparent;
 }
@@ -271,10 +284,10 @@ h1
 {
 	background-color: black;
 	color: #ff0000;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 code
 {
@@ -292,31 +305,33 @@ code
 	top: 0;
     left: 0;
 	z-index: 1000;
-	background-color: black;
+	background-color: #323333;
 	padding: 0;
 	margin: 0;
 }
 .a
 {
-	background-color: black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: .8em;
+	background-color: #323333;
   	display: inline-block;
-	color: #ff9900;
+	color: #f3b521;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 12px 16px;
 	text-decoration: none;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 .a:hover
 {
-	color: #ff0000;
-	background-color: #4d4d4d;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	color: #f07047;
+	/* background-color: #4d4d4d; */
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 .a span
 {
@@ -324,32 +339,37 @@ code
 }
 .moreA
 {
+	font-family: Verdana, Geneva, sans-serif;
   display: block;
   text-align: right;
   overflow: hidden;
-  
-    background-color: black;
-	color: #ff9900;
+  font-size: .8em;
+    background-color: #323333;
+	color: #f3b521;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 .moreA:hover
 {
-	color: #ff0000 !important;
-	background-color: #4d4d4d;
-	-webkit-transition: all .15s;
-	-moz-transition: all .15s;
-	-ms-transition: all .15s;
-	transition: all .15s;
+	color: #f07047 !important;
+	/* background-color: #4d4d4d; */
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
 }
 .items
 {
+/* 	top: 12px;
+	right: 0px;
+	z-index: 1000; */
     display: none;
+    position: abosolute;
     /*float: right;*/
 	right: 0;
 	overflow: hidden;
@@ -369,8 +389,8 @@ code
 }
 .active
 {
-	background-color: white !important;
-	color: #3399ff;
+	background-color: #fdd785 !important;
+	color: #323333;
 }
 .gradient 
 {
